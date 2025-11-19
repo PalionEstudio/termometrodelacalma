@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bola Zen - Energía Emocional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <h1 class="title">Bola Zen</h1>
+
+    <!-- Personaje -->
+    <div id="zenBall" class="zen-ball zen-happy">
+      <div class="eyes"></div>
+      <div class="mouth"></div>
+    </div>
+
+    <!-- Barra -->
+    <div class="bar-container">
+      <div id="energyBar" class="bar-fill"></div>
+    </div>
+
+    <!-- Botón -->
+    <button id="increaseBtn" class="btn">Subir Energía ⚡</button>
+
+    <div class="stats">
+      <p>Nivel actual: <span id="energyValue">0</span>%</p>
+      <p>Penalizaciones: <span id="penalties">0</span></p>
+      <p>Minutos extra: <span id="extraMinutes">0</span></p>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
