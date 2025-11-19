@@ -1,0 +1,108 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 * \{\
+  margin: 0;\
+  padding: 0;\
+  box-sizing: border-box;\
+\}\
+\
+body \{\
+  font-family: "Arial", sans-serif;\
+  background: #e4f3ff;\
+  display: flex;\
+  justify-content: center;\
+  padding: 20px;\
+\}\
+\
+.app-container \{\
+  text-align: center;\
+  width: 100%;\
+  max-width: 400px;\
+\}\
+\
+.title \{\
+  margin-bottom: 20px;\
+  font-size: 2rem;\
+  color: #333;\
+\}\
+\
+/* Bola Zen */\
+.zen-ball \{\
+  width: 150px;\
+  height: 150px;\
+  margin: 0 auto 20px;\
+  border-radius: 50%;\
+  background: radial-gradient(circle at 30% 30%, #fff, #cce6ff);\
+  display: flex;\
+  justify-content: center;\
+  align-items: center;\
+  position: relative;\
+  transition: transform 0.2s ease, background 0.3s;\
+\}\
+\
+.zen-ball .eyes \{\
+  width: 60px;\
+  height: 20px;\
+  background-size: contain;\
+\}\
+\
+.zen-ball.zen-happy .eyes \{\
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 100 30' xmlns='http://www.w3.org/2000/svg'><circle cx='25' cy='15' r='5'/><circle cx='75' cy='15' r='5'/></svg>");\
+\}\
+\
+.zen-ball.zen-neutral .eyes \{\
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="13" width="10" height="4"/><rect x="70" y="13" width="10" height="4"/></svg>');\
+\}\
+\
+.zen-ball.zen-angry .eyes \{\
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg"><path d="M15 30 L35 10" stroke="black" stroke-width="5"/><path d="M85 30 L65 10" stroke="black" stroke-width="5"/></svg>');\
+\}\
+\
+.zen-ball.zen-angry \{\
+  background: radial-gradient(circle at 30% 30%, #fff, #ffb3b3);\
+  transform: scale(1.1);\
+\}\
+\
+/* Barra */\
+.bar-container \{\
+  width: 100%;\
+  background: #ddd;\
+  height: 30px;\
+  border-radius: 20px;\
+  overflow: hidden;\
+  margin: 20px 0;\
+\}\
+\
+.bar-fill \{\
+  width: 0%;\
+  height: 100%;\
+  background: #4caf50;\
+  transition: width 0.3s ease, background 0.3s;\
+\}\
+\
+/* Bot\'f3n */\
+.btn \{\
+  background: #4a9cff;\
+  color: white;\
+  border: none;\
+  padding: 15px 20px;\
+  border-radius: 12px;\
+  font-size: 1.2rem;\
+  cursor: pointer;\
+  transition: transform 0.1s ease;\
+\}\
+\
+.btn:active \{\
+  transform: scale(0.96);\
+\}\
+\
+.stats \{\
+  margin-top: 15px;\
+  font-size: 1.1rem;\
+\}\
+}
